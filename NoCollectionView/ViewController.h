@@ -7,8 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Flickr, FlickrPhoto;
 
-@interface ViewController : UIViewController
+
+
+
+
+@interface ViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic, weak) IBOutlet UIToolbar *toolBar;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
+@property (nonatomic, weak) IBOutlet UITextField *textField;
+@property (nonatomic, strong) NSMutableDictionary *searchResults;
+@property (nonatomic, strong) NSMutableArray *searches;
+@property (nonatomic, strong) Flickr *flickr;
+
+- (IBAction)shareButtonDidChoose:(id)sender;
 
 
 @end
