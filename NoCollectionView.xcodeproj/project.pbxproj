@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1DA11619E4D8BF00154303 /* NoCRVHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1DA11519E4D8BF00154303 /* NoCRVHeader.m */; };
+		FA1DA11A19E4E2A900154303 /* NoPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1DA11919E4E2A900154303 /* NoPhotoViewController.m */; };
 		FA1EC81E19E129EB0093094A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC81D19E129EB0093094A /* main.m */; };
 		FA1EC82119E129EB0093094A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC82019E129EB0093094A /* AppDelegate.m */; };
 		FA1EC82419E129EB0093094A /* NoCollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC82219E129EB0093094A /* NoCollectionView.xcdatamodeld */; };
@@ -17,6 +19,7 @@
 		FA1EC83B19E129EB0093094A /* NoCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC83A19E129EB0093094A /* NoCollectionViewTests.m */; };
 		FA81A3BF19E29FE200617DF3 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = FA81A3BC19E29FE200617DF3 /* Flickr.m */; };
 		FA81A3C019E29FE200617DF3 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = FA81A3BE19E29FE200617DF3 /* FlickrPhoto.m */; };
+		FAB8167919E3E9A50021B9F3 /* NoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB8167819E3E9A50021B9F3 /* NoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1DA11419E4D8BF00154303 /* NoCRVHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoCRVHeader.h; sourceTree = "<group>"; };
+		FA1DA11519E4D8BF00154303 /* NoCRVHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoCRVHeader.m; sourceTree = "<group>"; };
+		FA1DA11819E4E2A900154303 /* NoPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoPhotoViewController.h; sourceTree = "<group>"; };
+		FA1DA11919E4E2A900154303 /* NoPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoPhotoViewController.m; sourceTree = "<group>"; };
 		FA1EC81819E129EB0093094A /* NoCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1EC81C19E129EB0093094A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1EC81D19E129EB0093094A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,6 +55,8 @@
 		FA81A3BC19E29FE200617DF3 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
 		FA81A3BD19E29FE200617DF3 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
 		FA81A3BE19E29FE200617DF3 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
+		FAB8167719E3E9A50021B9F3 /* NoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoCollectionViewCell.h; sourceTree = "<group>"; };
+		FAB8167819E3E9A50021B9F3 /* NoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1DA11319E4D81200154303 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DA11419E4D8BF00154303 /* NoCRVHeader.h */,
+				FA1DA11519E4D8BF00154303 /* NoCRVHeader.m */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		FA1DA11719E4E27A00154303 /* NoPhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DA11819E4E2A900154303 /* NoPhotoViewController.h */,
+				FA1DA11919E4E2A900154303 /* NoPhotoViewController.m */,
+			);
+			name = NoPhotoViewController;
+			sourceTree = "<group>";
+		};
 		FA1EC80F19E129EB0093094A = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +158,8 @@
 		FA81A3B719E29F9E00617DF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAB8167619E3E9570021B9F3 /* NoCell */,
+				FA1DA11319E4D81200154303 /* Header */,
 				FA1EC82819E129EB0093094A /* Main.storyboard */,
 			);
 			name = Views;
@@ -139,6 +168,7 @@
 		FA81A3B819E29FAC00617DF3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA1DA11719E4E27A00154303 /* NoPhotoViewController */,
 				FA81A3BA19E29FCC00617DF3 /* Flickr */,
 				FA1EC82519E129EB0093094A /* ViewController.h */,
 				FA1EC82619E129EB0093094A /* ViewController.m */,
@@ -162,6 +192,15 @@
 				FA81A3BE19E29FE200617DF3 /* FlickrPhoto.m */,
 			);
 			name = Flickr;
+			sourceTree = "<group>";
+		};
+		FAB8167619E3E9570021B9F3 /* NoCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8167719E3E9A50021B9F3 /* NoCollectionViewCell.h */,
+				FAB8167819E3E9A50021B9F3 /* NoCollectionViewCell.m */,
+			);
+			name = NoCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA81A3BF19E29FE200617DF3 /* Flickr.m in Sources */,
+				FA1DA11619E4D8BF00154303 /* NoCRVHeader.m in Sources */,
 				FA1EC82119E129EB0093094A /* AppDelegate.m in Sources */,
 				FA1EC82419E129EB0093094A /* NoCollectionView.xcdatamodeld in Sources */,
+				FA1DA11A19E4E2A900154303 /* NoPhotoViewController.m in Sources */,
 				FA81A3C019E29FE200617DF3 /* FlickrPhoto.m in Sources */,
 				FA1EC82719E129EB0093094A /* ViewController.m in Sources */,
+				FAB8167919E3E9A50021B9F3 /* NoCollectionViewCell.m in Sources */,
 				FA1EC81E19E129EB0093094A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

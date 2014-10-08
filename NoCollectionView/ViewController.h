@@ -7,22 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Flickr, FlickrPhoto;
+@class Flickr, FlickrPhoto,NoCollectionViewCell, NoCRVHeader;
 
-
-
-
-
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface ViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIToolbar *toolBar;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
 @property (nonatomic, weak) IBOutlet UITextField *textField;
+
+//UICollectionView
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+//Flickr properties
 @property (nonatomic, strong) NSMutableDictionary *searchResults;
 @property (nonatomic, strong) NSMutableArray *searches;
 @property (nonatomic, strong) Flickr *flickr;
 
-- (IBAction)shareButtonDidChoose:(id)sender;
+
+- (IBAction)shareButtonTapped:(id)sender;
 
 
 @end
